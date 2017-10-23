@@ -1,0 +1,356 @@
+/*StyleSheet for HunekeEngineering*/
+
+/*==========
+  =        =
+  = NAVBAR =
+  =        =
+  ==========*/
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', arial, sans-serif;
+}
+
+ul {
+	list-style: none;
+}
+p {
+	color: #5a5a5a;
+	font-size: 13px;
+	letter-spacing: 0.25px;
+	line-height: 24px;
+}
+
+.section-heading h4 {
+	text-align: center;
+	font-size: 17px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #121212;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    z-index: 10000;
+    transition: all 0.2s ease-in-out;
+    height: 80px;
+    background-color:transparent;  
+    
+    text-align: center;
+    line-height: 40px;
+}
+
+.navbar-brand {
+	line-height: 80px;
+    padding: 0px;
+    font-weight: 400;
+    font-size: 24px;
+    color: grey;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+.navbar-brand em {
+    color: #d44457;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.navbar-nav>li>a {
+	color: #111;
+	font-size: 14px;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-shadow: none;
+	line-height: 80px;
+	padding: 0px;
+    letter-spacing: 0.5px;
+    right: 15px;
+}
+
+.navbar-nav>li {
+	margin-left: 45px;
+}
+
+.header.active .navbar-nav>li>a {
+	font-size: 13px;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-shadow: none;
+	color: #121212!important;
+}
+
+.header.active {
+    background-color: rgba(250, 250, 250, 0.98);
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+.header.active .navbar-brand {
+	margin-top: 22px;
+	display: inline-block;
+	width: 125px;
+	height: 32px;
+	background-repeat: no-repeat;
+}
+#main-nav {
+	background-color: rgba(250, 250, 250, 0.98);
+	background-image: none!important;
+}
+.header .navbar-brand {
+    font-weight: 900;
+}
+.navbar-inverse {
+	background-image: none;
+	background-color: rgba(250, 250, 250, 0.98);
+}
+.header .navbar {
+    margin: 0;
+    border: none;
+}
+.page-section {
+    padding: 80px 0;
+}
+.navbar-inverse .navbar-toggle {
+	margin-top: 22px;
+    border-color: #a2cf8d;
+    background-color: #a2cf8d;
+}
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+	background-color: #a2cf8d;
+}
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 15px!important;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+@media (min-width: 768px) {
+    .header .navbar-brand {
+        padding-left: 0;
+    }
+    .navbar-nav {
+        float: right;
+    }
+}
+@media (max-width: 480px) {
+    .page-section h1 {
+        font-size: 3em;
+    }
+    .page-section h2 {
+        font-size: 2em;
+    }
+    .page-section p {
+        font-size: 1em;
+        margin: 0 0 20px;
+    }
+}
+
+.section-heading .line-div {
+    width: 100px;
+    height: 3px;
+    background-color: black;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.section-heading h4 {
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: black;
+}
+
+.section-heading {
+    margin-top: 30px;
+}
+
+/*OUR STAFF*/
+
+.service-item {
+    cursor: default;
+    background-color: white;
+    text-align: center;
+    padding: 10px 0px;
+    transition: all 0.7s;
+    margin-top: 20px;
+    box-shadow: 0px 0px 2px white;
+}
+
+.service-item:hover {
+    background-color: lightgray;
+}
+
+.service-item h4 {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.first-staff .icon {
+    background-image: url(../img/Tomh100.jpg);
+    background-repeat: no-repeat;
+	height: 100px;
+	width: 100px;
+    display: inline-block;
+
+}
+
+
+.second-staff .icon {
+    background-image: url(../img/julia90.jpg);
+    background-repeat: no-repeat;
+	height: 100px;
+	width: 100px;
+    display: inline-block;
+
+}
+
+.third-staff .icon {
+    background-image: url(../img/Ryanpic90.jpg);
+    background-repeat: no-repeat;
+	height: 100px;
+	width: 100px;
+    display: inline-block;
+
+}
+
+
+.fourth-staff .icon {
+    background-image: url(../img/Sharon90.jpg);
+    background-repeat: no-repeat;
+	height: 100px;
+	width: 100px;
+    display: inline-block;
+
+}
+
+.fifth-staff .icon {
+    background-image: url(../img/jordan80.jpg);
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+
+}
+
+.sixth-staff .icon {
+    background-image: url(../img/ashley90.jpg);
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}
+
+.seventh-staff .icon {
+    background-image: url(../img/valerieeskelsen100.jpg);
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}
+
+.eigth-staff .icon {
+    background-image: url(../img/DanAtWork-50.jpg);
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}
+
+#services {
+    background-color: lightslategrey;
+}
+
+
+/*HERO SLIDER*/
+.slide-style {
+    color: white;
+}
+
+.slide-style span {
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.slide-style h2 {
+    position: relative;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 0;
+}
+
+.slide-style p {
+    position: relative;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.25px;
+    line-height: 24px;
+}
+
+.cd-full-width {
+    background-color: lightslategray;
+}
+
+
+.cd-btn {
+    padding: 0;
+    margin: 0;
+    margin-top: 0;
+}
+
+/*ABOUT US*/
+#aboutus .section-heading h4 em{
+    color: #D44457;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+.section-heading p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.wrapper {
+    margin-top: 15px;
+    background-color: lightslategray;
+    width: 100%;
+    padding-bottom: 55px;
+}
+
+.wrapper .line-div {
+    width: 370px;
+    color:white;
+}
+
+.wrapper h4 {
+    color: white;
+}
+
+.service-item h4 {
+    color: black;
+}
+
+.portfolio {
+    color: black;
+}
