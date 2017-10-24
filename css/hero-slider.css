@@ -1,4 +1,4 @@
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
@@ -14,6 +14,7 @@ html {
 }
 
 body {
+  font-size: 1.6rem;
   font-family: "Open Sans", sans-serif;
   color: #2c343b;
   background-color: #f2f2f2;
@@ -28,9 +29,9 @@ img {
   max-width: 100%;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-Main Components 
+Main Components
 
 -------------------------------- */
 .cd-header {
@@ -70,6 +71,7 @@ Main Components
   margin-right: 5%;
   width: 44px;
   height: 100%;
+  background: url("../assets/cd-icon-menu.svg") no-repeat center center;
 }
 .cd-primary-nav ul {
   position: absolute;
@@ -138,7 +140,7 @@ Main Components
   }
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Slider
 
@@ -200,7 +202,7 @@ Slider
   }
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Single slide style
 
@@ -211,13 +213,23 @@ Single slide style
   background-repeat: no-repeat;
 }
 .cd-hero-slider li:first-of-type {
-  background-image: url(../img/slide_01.jpg);
+  background-color: #2c343b;
 }
 .cd-hero-slider li:nth-of-type(2) {
-  background-image: url(../img/slide_02.jpg);
+  background-color: #3d4952;
+  background-image: url("../assets/tech-1-mobile.jpg");
 }
 .cd-hero-slider li:nth-of-type(3) {
-  background-image: url(../img/slide_03.jpg);
+  background-color: #586775;
+  background-image: url("../assets/tech-2-mobile.jpg");
+}
+.cd-hero-slider li:nth-of-type(4) {
+  background-color: #2c343b;
+  background-image: url("../assets/video-replace-mobile.jpg");
+}
+.cd-hero-slider li:nth-of-type(5) {
+  background-color: #2c343b;
+  background-image: url(../assets/img.jpg);
 }
 .cd-hero-slider .cd-full-width,
 .cd-hero-slider .cd-half-width {
@@ -228,7 +240,7 @@ Single slide style
   left: 0;
   top: 0;
   /* this padding is used to align the text */
-  padding-top: 80px;
+  padding-top: 100px;
   text-align: center;
   /* Force Hardware Acceleration in WebKit */
   -webkit-backface-visibility: hidden;
@@ -327,6 +339,15 @@ Single slide style
   background-color: #161a1e;
 }
 @media only screen and (min-width: 768px) {
+  .cd-hero-slider li:nth-of-type(2) {
+    background-image: none;
+  }
+  .cd-hero-slider li:nth-of-type(3) {
+    background-image: none;
+  }
+  .cd-hero-slider li:nth-of-type(4) {
+    background-image: none;
+  }
   .cd-hero-slider .cd-full-width,
   .cd-hero-slider .cd-half-width {
     padding-top: 150px;
@@ -361,7 +382,7 @@ Single slide style
 @media only screen and (min-width: 1170px) {
   .cd-hero-slider .cd-full-width,
   .cd-hero-slider .cd-half-width {
-    padding-top: 250px;
+    padding-top: 220px;
   }
   .cd-hero-slider h2, .cd-hero-slider p {
     margin-bottom: 20px;
@@ -374,7 +395,7 @@ Single slide style
   }
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Single slide animation
 
@@ -405,7 +426,7 @@ Single slide animation
     transform: translateX(0);
   }
   .cd-hero-slider .is-moving .cd-half-width {
-    /* this is the slide moving outside the viewport 
+    /* this is the slide moving outside the viewport
     wait for the end of the transition on the <li> parent before set opacity to 0 and translate to 40px/-40px */
     -webkit-transition: opacity 0s 0.5s, -webkit-transform 0s 0.5s;
     -moz-transition: opacity 0s 0.5s, -moz-transform 0s 0.5s;
@@ -459,7 +480,7 @@ Single slide animation
   .cd-hero-slider li.is-moving .cd-full-width h2,
   .cd-hero-slider li.is-moving .cd-full-width p,
   .cd-hero-slider li.is-moving .cd-full-width .cd-btn {
-    /* this is the slide moving outside the viewport 
+    /* this is the slide moving outside the viewport
     wait for the end of the transition on the li parent before set opacity to 0 and translate to 100px/-100px */
     -webkit-transition: opacity 0s 0.5s, -webkit-transform 0s 0.5s;
     -moz-transition: opacity 0s 0.5s, -moz-transform 0s 0.5s;
@@ -481,13 +502,12 @@ Single slide animation
     transition: opacity 0.4s 0.4s, transform 0.5s 0.4s, background-color 0.2s 0s;
   }
 }
-/* -------------------------------- 
+/* --------------------------------
 
 Slider navigation
 
 -------------------------------- */
 .cd-slider-nav {
-  display: none;
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -584,6 +604,7 @@ Slider navigation
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
+  background: url(../assets/cd-icon-navigation.svg) no-repeat 0 0;
 }
 .no-touch .cd-slider-nav a:hover {
   background-color: rgba(0, 1, 1, 0.5);
@@ -636,7 +657,7 @@ Slider navigation
   }
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Main content
 
@@ -662,7 +683,7 @@ Main content
   }
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Javascript disabled
 

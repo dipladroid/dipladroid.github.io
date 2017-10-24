@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Huneke Engineering</title>
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" type="text/css" href="css/boostrap.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css.map">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/hero-slider.css">
+        <link rel="stylesheet" type="text/css" href="css/huneke-style.css">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+
+    <body>
+    <!-- NAV INCLUDE !-->
+        <div class="header">
+            <div class="container" style="width: 100%">
+                <nav class="navbar navbar-inverser" role="navigation">
+                    <div id="main-nav" class="collapse navbar-collapse">
+                        <a href="index.html" class="navbar-brand scroll-top">
+                            <em>H</em>uneke <em>E</em>ngineering
+                        </a>
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html" class="scroll-top">Home</a></li>
+                            <li><a href="ourstaff.html" class="scroll-link">Our Staff</a></li>
+                            <li><a href="portfolio.html" class="scroll-link">Portfolio</a></li>
+                            <li><a href="employment.html" class="scroll-link">Employment</a></li>
+                            <li><a href="contact.html" class="scroll-link">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="container contact">
+            <div class="row" style="padding-top: 100px;">
+                <div class="col-md-6">
+                    <div class="form">
+                        <span></span>
+                        <form id="contact" action="#" method="post">
+                            <h4>Name:</h4>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <fieldset>
+                                        <input name="name" type="text" class="form-control" id="name" placeholder="Your name...." required="">
+                                    </fieldset>
+                                </div>
+                            </div>
+
+                            <h4>E-Mail:</h4>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <fieldset>
+                                        <input name="E-Mail" type="text" class="form-control" id="name" placeholder="Your E-Mail...." required="">
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <h4>Phone</h4>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <fieldset>
+                                        <input name="Phone" type="text" class="form-control" id="name" placeholder="(555)-555-5555" required="">
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <h4>Address:</h4>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <fieldset>
+                                        <input name="Address" type="text" class="form-control" id="name" placeholder="Your address...." required="">
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <h4>Comments:</h4>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <fieldset>
+                                        <input name="Comments" type="text" class="form-control" id="name" placeholder="Your comments...." required="">
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <input type="Submit" value="Submit" class="submit-button">
+                            <br>
+                            <br>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="section-heading-main">
+                            <h4>Our Office Location</h4>
+                            <p style="text-align: left;">
+                                Huneke Engineering<br>
+                                60 Gailwood, Ste.B<br>
+                                St. Peters, MO 63376<br>
+                            </p>
+                        </div>  
+                    <br><br>
+                    <div id="map""></div>
+                    <script>
+                        function initMap() {
+                            var uluru = {lat: 38.785917, lng: -90.576392};
+                            var map = new google.maps.Map(document.getElementById('map'), {
+                                zoom: 16,
+                                center: uluru
+                            });
+                            var marker = new google.maps.Marker({
+                                position: uluru,
+                                map: map
+                            });
+                        }
+                    </script>
+                    <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCY1s-Ns90ZUyqhENeCdNt5WWy_0LCAw-M&callback=initMap">
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    </body>
+</html>

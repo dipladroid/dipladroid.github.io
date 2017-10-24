@@ -21,13 +21,6 @@ p {
 	line-height: 24px;
 }
 
-.section-heading h4 {
-	text-align: center;
-	font-size: 17px;
-	text-transform: uppercase;
-	font-weight: 700;
-	color: #121212;
-}
 .header {
     position: fixed;
     top: 0;
@@ -37,8 +30,7 @@ p {
     z-index: 10000;
     transition: all 0.2s ease-in-out;
     height: 80px;
-    background-color:transparent;  
-    
+    background-color:transparent;
     text-align: center;
     line-height: 40px;
 }
@@ -138,15 +130,17 @@ p {
     border: 1px solid transparent;
     border-radius: 4px;
 }
-@media (min-width: 768px) {
+
+@media (min-width: 480px) {
     .header .navbar-brand {
         padding-left: 0;
     }
     .navbar-nav {
         float: right;
     }
+
 }
-@media (max-width: 480px) {
+@media (max-width: 540px) {
     .page-section h1 {
         font-size: 3em;
     }
@@ -157,7 +151,52 @@ p {
         font-size: 1em;
         margin: 0 0 20px;
     }
+
 }
+
+@media (max-width: 950px) {
+    .main-img {
+        display: block;
+    }
+}
+
+
+/*FOOTER
+
+*/
+.main-footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background-color: lightslategrey;   
+}
+
+.ul-footer {
+    display: inline-flex;
+}
+
+.main-footer li {
+    margin-right: 5px;    
+}
+
+.main-footer h4 {
+    right: 0;
+    font-weight: 300;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+.main-footer h4 em {
+    color: #d44457;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
 
 .section-heading .line-div {
     width: 100px;
@@ -177,6 +216,19 @@ p {
 
 .section-heading {
     margin-top: 30px;
+}
+
+.section-heading-main h4{
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #d44457;
+}
+
+.section-heading-main p {
+    text-align: center;
+    font-size: 18px;
 }
 
 /*OUR STAFF*/
@@ -291,40 +343,40 @@ p {
 }
 
 .slide-style h2 {
-    position: relative;
     font-size: 36px;
     text-transform: uppercase;
     font-weight: 900;
-    padding: 0;
 }
 
 .slide-style p {
-    position: relative;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 0.25px;
     line-height: 24px;
+    text-shadow: 0px 0px 7px black;
+    text-emphasis: black;
 }
 
-.cd-full-width {
-    background-color: lightslategray;
+.slide-img {
+    background-image: url(../img/slidebg.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
-
-.cd-btn {
-    padding: 0;
-    margin: 0;
-    margin-top: 0;
+.slide-img-1 {
+    background-image: url(../img/slidebg2.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
 }
+
+.slide-img-2 {
+    background-image: url(../img/slidebg3.jpg);
+    background-repeat: no-repeat;
+    background-
+}
+
 
 /*ABOUT US*/
-#aboutus .section-heading h4 em{
-    color: #D44457;
-    font-weight: 700;
-    font-size: 24px;
-    text-transform: uppercase;
-    font-style: normal;
-}
 
 .section-heading p {
     font-size: 18px;
@@ -353,4 +405,42 @@ p {
 
 .portfolio {
     color: black;
+}
+
+/*CONTACT*/
+#map {
+    height: 300px;
+    width: 100%;
+    box-shadow: 0px 0px 8px black;
+}
+
+.map-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.contact h4 {
+    text-align: left;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #d44457;
+}
+
+.submit-button {
+  display: inline-block;
+  padding: 1.2em 1.4em;
+  margin-top: .8em;
+  background-color: rgba(212, 68, 87, 0.9);
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-transform: uppercase;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  -webkit-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  transition: background-color 0.2s;
 }

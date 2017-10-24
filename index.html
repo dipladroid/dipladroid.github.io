@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Huneke Engineering</title>
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" type="text/css" href="css/boostrap.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
@@ -14,8 +15,6 @@
         <link rel="stylesheet" type="text/css" href="css/huneke-style.css">
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald"/>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-
     </head>
 
 <body>
@@ -28,39 +27,40 @@
                     </a>
                     <ul class="nav navbar-nav">
                         <li><a href="index.html" class="scroll-top">Home</a></li>
-                        <li><a href="/aboutus.html" class="scroll-link" data-id="about">About Us</a></li>
-                        <li><a href="/ourstaff.html" class="scroll-link" data-id="ourstaff">Our Staff</a></li>
-                        <li><a href="/employment.html" class="scroll-link" data-id="blog">Employment</a></li>
-                        <li><a href="/contact.html" class="scroll-link" data-id="contact">Contact Us</a></li>
+                        <li><a href="ourstaff.html" class="scroll-link">Our Staff</a></li>
+                        <li><a href="portfolio.html" class="scroll-link">Portfolio</a></li>
+                        <li><a href="employment.html" class="scroll-link">Employment</a></li>
+                        <li><a href="contact.html" class="scroll-link">Contact Us</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
     </div>
 
-    
+
+
     <section class="cd-hero">
         <ul class="cd-hero-slider autoplay">
             <li class="selected">
-                <div class="cd-full-width slide-style">
+                <div class="cd-full-width slide-style slide-img-2">
                     <h2>Welcome to Huneke Engineering</h2>
                     <p>
                             Residential and Light Commercial structural design for Metro St. Louis, MO.
                             We offer friendly, on time, accurate solutions that are competively priced.
                             Call us today for a quote!
                     </p>
-                    <a href="contact.html" class="cd-btn">Contact Us!</a>
+                    <a href="contact.html" class="cd-btn">Contact Us</a>
                 </div>
             </li>
 
             <li>
-                <div class="cd-full-width slide-style">
+                <div class="cd-full-width slide-style slide-img-1">
                     <h2>What is Huneke Engineering?</h2>
                     <p>
                         Huneke Engineering started with residential structural engineering design, designing such things as decks, roof overhangs, floor joists, headers, and foundations. Materials used in the designs were wood, steel, and concrete.
-                            
+
                     </p>
-                    <a href="aboutus.html" class="cd-btn">About Us</a>
+                    <a href="ourstaff.html" class="cd-btn">Our Staff</a>
                 </div>
             </li>
 
@@ -72,44 +72,81 @@
                         Huneke Engineering offers competitive pay and excellent benefits. For more Information click here.
                     </p>
                     <a href="employment.html" class="cd-btn">Apply Now</a>
-                    
+
                 </div>
             </li>
 
             <li>
-                <div class="cd-full-width slide-style">
+                <div class="cd-full-width slide-style slide-img">
                     <h2>Interested in our Work?</h2>
                     <p>
                         See our portfolio of our past jobs, and check out some of our customer reviews!
                     </p>
-                    <a href="aboutus.html" class="cd-btn">About Us</a>                    
+                    <a href="aboutus.html" class="cd-btn">Portfolio</a>
                 </div>
             </li>
         </ul>
 
+        <div class="cd-slider-nav">
+            <nav>
+                <span class="cd-marker item-1"></span>
+                <ul>
+                    <li class="selected"><a href="#0">Home</a></li>
+                    <li><a href="#0">Our Staff</a></li>
+                    <li><a href="#0">Jobs</a></li>
+                    <li><a href="#0">Portfolio</a></li>
+                </ul>
+            </nav>
+        </div>
     </section>
 
-    
+    <!-- MAIN BODY !-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="section-heading-main" style="padding-top: 50px;">
+                    <h4>Who We Are:</h4>
+                    <p>
+                        Huneke Engineering started with residential structural engineering design, designing such things as decks, roof overhangs, floor joists, headers, and foundations. Materials used in the designs were wood, steel, and concrete.
 
-    
+                        Our licensed Civil Engineer has many years of experience. Engineering is a service-oriented field, so we listen to what your wishes, concerns, and goals are before we start the project. We also have on staff our Junior Engineer, who specializes in the science and art of wind engineering.
+                    </p>
+            </div>
+            <div class="col-md-12" style="padding-top: 50px;">
+                <div class="section-heading-main">
+                    <h4>What We Do:</h4>
+                    <p>
+                        We specialize in several fields of Structural Engineering, a few of those being: Timber Structures, Wood Trusses, Concrete Bridges, Elevated Signs, Litigation Research, and many more.
+                        Of course this list is not all of what we do, so please be sure to contact us to discuss how we can assist you on your next project.
+                        <br><a href="contact.html" class="submit-button">Contact Us</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="section-heading-main main-img" style="padding-top: 110px;">
+                    <img src="img/drafter.jpg" style="box-shadow: 0px 0px 5px black;">
+                </div>
+            </div>
+            <div class="col-sm-6 col-img">
+
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
+
+
+
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
-
+    <script src="js/vendor/jquery-2.1.1.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
-
-
 </body>
-
-
-
-
-
 </html>
