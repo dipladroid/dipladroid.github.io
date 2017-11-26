@@ -28,9 +28,11 @@
                     <ul class="nav navbar-nav">
                         <li><a href="index.html" class="scroll-top">Home</a></li>
                         <li><a href="ourstaff.html" class="scroll-link">Our Staff</a></li>
-                        <li><a href="portfolio.html" class="scroll-link">Portfolio</a></li>
+                        <li><a href="portfolio.html" class="scroll-link">Our Services</a></li>
                         <li><a href="employment.html" class="scroll-link">Employment</a></li>
                         <li><a href="contact.html" class="scroll-link">Contact Us</a></li>
+                        <li><a href="comments.html" class="scroll-link">Feedback</a></li>
+                        
                     </ul>
                 </div>
             </nav>
@@ -80,9 +82,9 @@
                 <div class="cd-full-width slide-style slide-img">
                     <h2>Interested in our Work?</h2>
                     <p>
-                        See our portfolio of our past jobs, and check out some of our customer reviews!
+                        See our portfolio of past jobs and what we do, and check out some of our previous customer reviews!
                     </p>
-                    <a href="aboutus.html" class="cd-btn">Portfolio</a>
+                    <a href="portfolio.html" class="cd-btn">Our Services</a>
                 </div>
             </li>
         </ul>
@@ -94,55 +96,135 @@
                     <li class="selected"><a href="#0">Home</a></li>
                     <li><a href="#0">Our Staff</a></li>
                     <li><a href="#0">Jobs</a></li>
-                    <li><a href="#0">Portfolio</a></li>
+                    <li><a href="#0">Our Services</a></li>
                 </ul>
             </nav>
         </div>
     </section>
 
     <!-- MAIN BODY !-->
+    <div class="main">
     <div class="container">
-        <div class="row">
+        <div class="row align-self-start">
             <div class="col-md-6">
-                <div class="section-heading-main" style="padding-top: 50px;">
-                    <h4>Who We Are:</h4>
-                    <p>
-                        Huneke Engineering started with residential structural engineering design, designing such things as decks, roof overhangs, floor joists, headers, and foundations. Materials used in the designs were wood, steel, and concrete.
-
-                        Our licensed Civil Engineer has many years of experience. Engineering is a service-oriented field, so we listen to what your wishes, concerns, and goals are before we start the project. We also have on staff our Junior Engineer, who specializes in the science and art of wind engineering.
-                    </p>
-            </div>
-            <div class="col-md-12" style="padding-top: 50px;">
                 <div class="section-heading-main">
-                    <h4>What We Do:</h4>
-                    <p>
-                        We specialize in several fields of Structural Engineering, a few of those being: Timber Structures, Wood Trusses, Concrete Bridges, Elevated Signs, Litigation Research, and many more.
-                        Of course this list is not all of what we do, so please be sure to contact us to discuss how we can assist you on your next project.
-                        <br><a href="contact.html" class="submit-button">Contact Us</a>
-                    </p>
+                    <h4>Welcome to Huneke Engineering</h4>
+                    <p>Residential and Commercial structural design for Metro St. Louis, MO.
+                        We offer friendly, on time, accurate solutions at a competitive price, call
+                        us today for a quote!</p>
+                    <h4>636-411-9000</h4>
                 </div>
             </div>
-        </div>
-
-        <div class="row">
             <div class="col-md-6">
-                <div class="section-heading-main main-img" style="padding-top: 110px;">
-                    <img src="img/drafter.jpg" style="box-shadow: 0px 0px 5px black;">
-                </div>
-            </div>
-            <div class="col-sm-6 col-img">
-
+                <div id="map"></div>
+                    <script>
+                        function initMap() {
+                            var uluru = {lat: 38.785917, lng: -90.576392};
+                            var map = new google.maps.Map(document.getElementById('map'), {
+                                zoom: 16,
+                                center: uluru
+                            });
+                            var marker = new google.maps.Marker({
+                                position: uluru,
+                                map: map
+                            });
+                        }
+                    </script>
+                    <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCY1s-Ns90ZUyqhENeCdNt5WWy_0LCAw-M&callback=initMap">
+                    </script>
             </div>
         </div>
     </div>
-</div>
+        
+    <div class="container-fluid colored-heading">
+        <div class="container">
+            <div class="row align-self-start">
+                <div class="col-md-4">
+                    <div class="section-heading-main">
+                        <h4>Gravity Engineering</h4>
+                        <p style="color: white;">Gravity loads consist of live loads and dead loads. The engineer determines the sizing of beams, headers columns, and footings for gravity loads. Some of the tricks of the trade are:<br>
+                        Determine deflection, not just stress<br>
+                        determine the weight of the footing, not just the load on it<br>
+                        determine the horizontal load on the footing, not just the vertical load. 
+                        </p>
+                    </div>
+                </div>    
+                <div class="col-md-4">
+                    <div class="section-heading-main">
+                        <h4>Wind Engineering</h4>
+                        <p style="color: white;">Identifying property type, location, use group and wind loads are the first challenges when doing wind engineering. Once loads are applied, then the structural engineering begins. With the use of the prescriptive methods defined in the building code, and with tested materials used for designing shear in walls and moment resistance, the engineer picks materials that can resist the wind. </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="section-heading-main">
+                        <h4>Seismic Engineering</h4>
+                        <p style="color: white;">Residential projects rarely need seismic engineering in the St. Louis area since wind is usually the determining factor. Commercial is a different story. A few years ago, no one cared about seismic design. Nowadays it is a major concern. Calculations and reports are required for plan reviewers before permits are awarded to begin construction.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+        
+    <div class="container">
+        <div class="row">
+            <div class="section-heading-main">
+                <h4>Engineering Services</h4>
+            </div>  
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="service-item-main">
+                    <h4>Header Design</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="service-item-main">
+                    <h4>Retaining Wall Design</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="service-item-main">
+                    <h4>On-Site Inspections</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="service-item-main">
+                    <h4>Balloon Wall Design</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="service-item-main">
+                    <h4>Cantilevers</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="service-item-main">
+                    <h4>Deck Column Design</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="service-item-main">
+                    <h4>ISF Wall Design</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="service-item-main">
+                    <h4>Column Design</h4>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    </div>
 
 
 
 
 
 
-
+    
+    
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/vendor/jquery-2.1.1.js"></script>
