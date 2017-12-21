@@ -242,6 +242,12 @@ p {
     color: black;
 }
 
+.colored-heading {
+    background-image: url(../img/service-background.png);
+    background-position: center;
+    width: 100%;
+}
+
 .section-heading {
     margin-top: 30px;
 }
@@ -255,7 +261,7 @@ p {
     font-size: 30px;
     text-transform: uppercase;
     font-weight: 800;
-    color: white;
+    color: #0042a5;
 }
 
 .section-heading-main p {
@@ -283,6 +289,36 @@ p {
 .section-contact {
     text-align: center;
     font-size: 14px;
+}
+
+.reference-block{
+    text-align: center;
+    transition: all 1s;
+}
+
+.revealed {
+    display: none;
+}
+
+.reference-block h5{
+    color: #0042a5;
+}
+
+.reference-block em {
+    color: #0042a5;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 16px;
+    font-style: normal;
+}
+
+.reference-block:hover{
+    background-color: lightgrey;
+}
+
+
+.reference-block p:hover .revealed {
+    display: inline-block;
 }
 
 /*OUR STAFF*/
@@ -516,3 +552,7 @@ p {
   transition: background-color 0.2s;
 }
 
+.line-div {
+    background-color: #0042a5;
+    height: 3px;
+}
