@@ -1,0 +1,292 @@
+/*StyleSheet for HunekeEngineering*/
+
+/*==========
+  =        =
+  = NAVBAR =
+  =        =
+  ==========*/
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', 'Roboto', 'Open Sans', arial, sans-serif;
+}
+
+ul {
+	list-style: none;
+}
+p {
+	color: #5a5a5a;
+	font-size: 13px;
+	letter-spacing: 0.25px;
+	line-height: 24px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    z-index: 10000;
+    transition: all 0.2s ease-in-out;
+    height: 300px;
+    background-color:transparent;
+    text-align: center;
+    line-height: 40px;
+}
+
+.navbar-brand {
+	line-height: 80px;
+    padding: 0px;
+    font-weight: 400;
+    font-size: 24px;
+    color: grey;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+.nav-links {
+    color: #0042a5;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.nav-links:hover {
+    color: #00112b;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.nav-image {
+    width: 500px;
+    height: 150px;
+    padding-right: 15px;
+
+}
+
+.contact-links h4 {
+    color: #0042a5;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-shadow: none;
+    letter-spacing: 0.5px;
+    right: 15px;
+}
+
+
+
+.header.active .navbar-nav>li>a {
+	font-size: 13px;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-shadow: none;
+	color: #121212!important;
+}
+
+
+
+#main-nav {
+	background-color: rgba(250, 250, 250, 0.98);
+    background-image: none!important;
+}
+
+#main-nav b {
+    padding-right: 8px;
+    padding-left:  2px;
+}
+
+
+@media (min-width: 480px) {
+    .header .navbar-brand {
+        padding-left: 0;
+    }
+    .navbar-nav {
+        float: right;
+    }
+    
+
+
+.icon {
+    height: 30px;
+    width: 30px;
+}
+
+.nav-icon {
+    height: 15px;
+    width: 15px;
+}
+
+
+/*HERO SLIDER*/
+.cd-hero-slider {
+    height: 150px;
+    border-style: solid;
+    border-width: 3px;
+}
+
+.slide-style {
+    color: white;
+}
+
+.slide-style span {
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.slide-style h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.slide-style p {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 0.25px;
+    line-height: 24px;
+    text-shadow: 0px 0px 7px black;
+
+}
+
+.slide-img {
+    background-image: url(../images/slide1.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.slide-img-1 {
+    background-image: url(../images/slide2.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.slide-img-2 {
+    background-image: url(../images/slide3.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.slide-img-3 {
+    background-image: url(../images/slide4.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+#main-content p{
+    text-align: center;
+    color: #858585;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#main-content h3 {
+    color: #858585;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: 100;
+}
+
+#sub-content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#sub-content h4 {
+    color: #0042a5;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: left;
+}
+
+#sub-content p {
+    text-align: left;
+}
+
+#end-content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+#end-content h4 {
+    text-align: center;
+}
+.line-div{
+    width: 50%;
+    height: 2px;
+    background-color: #0042a5;
+}
+
+
+.main-footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 225px;
+    background-color: #282a2d;
+    text-align: center;
+    color: white;
+}
+
+.main-footer em {
+    color: #0042a5;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.main-footer a {
+    color: white;
+}
+
+.main-footer li {
+    margin-top: 10px;
+}
+
+.main-footer .left-list {
+    text-align: left;
+}
+.main-footer .right-list {
+    text-align: right;
+}
+
+.sub-footer {
+    left: 0;
+    bottom: 0;
+    height: 28px;
+    width:100%;
+    background-color: #0042a5;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.footer-icon {
+    height: 20px;
+    width: 20px;
+}
+
+#map {
+    height: 150px;
+    width: 100%;
+    box-shadow: 0px 0px 8px black;
+}
+
+.map-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.section-images {
+    height: 240px;
+    width: 360px;
+}
+
+.section-images:hover {
+    opacity: 0.9;
+    transition: 0.5s;
+}
